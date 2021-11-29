@@ -24,6 +24,7 @@ const FooterStyle = styled.footer`
     li {
       padding: 2rem 0;
       color: #16194f;
+      cursor: pointer;
     }
   }
   @media screen and (max-width: 1347px) {
@@ -53,37 +54,19 @@ function Footer() {
           </div>
           <ul className="button-nav">
             <div className="links1">
-              <li>
-                <a href="#">Team</a>
-              </li>
-              <li>
-                <a href="#">Press</a>
-              </li>
-              <li>
-                <a href="#">Fees</a>
-              </li>
+              <li>Team</li>
+              <li>Press</li>
+              <li>Fees</li>
             </div>
             <div className="links2">
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Projects</a>
-              </li>
-              <li>
-                <a href="#">Affiliate</a>
-              </li>
+              <li>Services</li>
+              <li>Projects</li>
+              <li>Affiliate</li>
             </div>
             <div className="links3">
-              <li>
-                <a href="#">Terms of use</a>
-              </li>
-              <li>
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#">Contact us</a>
-              </li>
+              <li>Terms of use</li>
+              <li>Privacy Policy</li>
+              <li>Contact us</li>
             </div>
           </ul>
         </div>
