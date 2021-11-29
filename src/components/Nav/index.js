@@ -13,6 +13,9 @@ const NavStyle = styled.nav`
     display: flex;
     justify-content: space-between;
     width: 40%;
+    li {
+      cursor: pointer;
+    }
   }
 `;
 
@@ -34,15 +37,9 @@ export default function Nav() {
           <img src={logo} alt="anh" />
         </div>
         <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Features</a>
-          </li>
-          <li>
-            <a href="#">Pricing</a>
-          </li>
+          <li className="nav-home">Home</li>
+          <li className="nav-features">Features</li>
+          <li className="nav-pricing">Pricing</li>
         </ul>
         <PrimaryButton>Sign Up</PrimaryButton>
       </NavStyle>
