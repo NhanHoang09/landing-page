@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/index";
+import { OuterLayout } from "./styles/Layout";
+import styled from "styled-components";
+import CardSection from "./components/CardSection/index";
+import ChartSection from "./components/ChartSection";
+import MessageSection from "./components/MessageSection";
+import PaymentSection from "./components/PaymentSection/index";
+import FAQsSection from "./components/FAQsSection/index";
+import Footer from "./components/Footer/index";
+import { Fade } from "react-reveal";
+
+const MainStyled = styled.main``;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <OuterLayout>
+        <MainStyled>
+          <Fade left>
+            <CardSection />
+          </Fade>
+          <Fade right>
+            <ChartSection />
+          </Fade>
+          <Fade left>
+            <MessageSection />
+          </Fade>
+          <Fade right>
+            <PaymentSection />
+          </Fade>
+          <FAQsSection />
+        </MainStyled>
+      </OuterLayout>
+      <Footer />
     </div>
   );
 }
